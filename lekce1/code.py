@@ -1,3 +1,18 @@
+# Spojeni dvou listu
+
+listone = [1,2,3]
+listtwo = [4,5,6]
+
+joinedlist = listone + listtwo
+
+
+listone = [1,2,3]
+listtwo = [4,5,6]
+mergedlist = []
+mergedlist.extend(listone)
+mergedlist.extend(listtwo)
+
+
 seznam = [1,2,3,4,5]
 [x for x in seznam] # [1,2,3,4,5]
 [[x] for x in seznam] # [[1],[2],[3],[4],[5]]
@@ -6,6 +21,21 @@ seznam = [1,2,3,4,5]
 
 
 #############################
+
+# pouziti int()
+
+listlist = ["1",'2',3, 3.14]
+
+# pokud bych chtel zachovat desetinne cisla, musel bych u posledniho
+# prvku listlist pouzit float()
+list_cisel = [int(cislo) for cislo in listlist]
+
+
+#############################
+
+
+
+
 
 
 #chroustani chroustani
@@ -65,21 +95,15 @@ hlasy = [
 
 #12.a) Kolik získal každý kandidát hlasů v celé ČR?
 igor =  sum( [igor[0] for igor in hlasy])
-#1296501
-#>>> augustin = sum( [augustin[1] for augustin in hlasy])
-#766454
+augustin = sum( [igor[0] for augustin in hlasy])
 vladan = sum( [vladan[2] for vladan in hlasy])
-#909361
 ondrej = sum( [ondrej[3] for ondrej in hlasy])
-#996101
 radim = sum( [radim[4] for radim in hlasy])
-#791656
-#Neboli:
+
 kandidati = [sum([radek[i] for radek in hlasy]) for i in [0,1,2,3,4]]
-#[1296501, 766454, 909361, 996101, 791656]
 
 
-12.b) Který kandidát vyhrál první kolo voleb?
+12.b) Který kandidát vyhrál první kolo voleb
 #>>> igor, radim, ondrej, vladan, augustin
 #(1296501, 791656, 996101, 909361, 766454)
 max(igor, radim, ondrej, vladan, augustin)
