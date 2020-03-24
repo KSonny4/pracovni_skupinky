@@ -1,3 +1,10 @@
+"úkol 10 - delky = [136, 105, 82]
+delky = [136, 105, 82]
+trvani = [str([x // 60, x % 60]) for x in delky]
+trvani = [str(x // 60) + ":" + str(x % 60) for x in delky]
+
+#########################
+
 nazvy = [
   'Někdo to rád horké, extended edition', 
   'Adéla ještě nevečeřela',
@@ -22,7 +29,7 @@ jmena = ['Roman', 'Jan', 'Miroslav', 'Petr', 'Gabriel']
 pocty_pismen = [len(x) for x in jmena]
 pismena_velkym = [x.upper() for x in jmena]
 zenska_jmena = [x + 'a' for x in jmena]
-pismena_velkym = [x.lower() + '@email.cz' for x in jmena]
+email_adresy = [x.lower() + '@email.cz' for x in jmena]
 
 
 
@@ -137,6 +144,9 @@ vsechny_pozice
 [jmena[pozice] for pozice in vsechny_pozice]
 #[' radim', 'igor', 'augustin', 'ondrej', 'augustin', 'igor', 'vladan', ' radim', 'igor', 'augustin', ' radim', 'vladan', 'vladan', 'ondrej']
 
+
+
+
 kraje = [
   ['Hlavní město Praha', '1 280 508'],
   ['Jihočeský kraj', '638 782'],
@@ -170,8 +180,14 @@ list1 = ["eat","sleep","repeat"]
 [[cislo_prvku, prvek] for cislo_prvku, prvek in enumerate(list1)]
 
 
-# tohle, scita to i do vic jak 1, zaokrouhlovaci chyby, python zaokrouhluje divne :D
-[[ round(kandidat / sum(hlasy[cislo_kraje]) * 100, 2) for kandidat in kraj] for cislo_kraje, kraj in enumerate(hlasy)]
+# bez enumerate
+[ [round(kandidat/sum(kraj)*100,2) for kandidat in kraj] for kraj 
+in hlasy]
+
+# Enumerate
+[[ round(kandidat / sum(hlasy[cislo_kraje]) * 100, 2) for kandidat in kraj]
+ for cislo_kraje, kraj in enumerate(hlasy)]
+
 
 
 
@@ -198,43 +214,6 @@ volici
 
 ###########################
 # ukol 6 v povinnem ukolu
-coronavirus = [
-    [ "China", 80967, 3248, 71150 ],
-    [ "Italy", 47021, 4032, 5129 ],
-    [ "Spain", 20412, 1032, 1588 ],
-    [ "Iran", 19644, 1433, 6745 ],
-    [ "Germany", 18794, 53, 180 ],
-    [ "USA", 16489, 223, 125 ],
-    [ "France", 10995, 372, 1295 ],
-    [ "South Korea", 8652, 94, 2233 ],
-    [ "UK", 3269, 184, 65 ],
-    [ "Netherlands", 2994, 106, 2 ],
-    [ "Austria", 2491, 6, 9 ],
-    [ "Belgium", 2257, 37, 204 ],
-    [ "Norway", 1912, 7, 1 ],
-    [ "Sweden", 1639, 16, 16 ],
-    [ "Denmark", 1255, 9, 1 ],
-    [ "Malaysia", 1030, 3, 87 ],
-    [ "Portugal", 1020, 6, 5 ],
-    [ "Japan", 963, 33, 215 ],
-    [ "Canada", 924, 12, 11 ],
-    [ "Australia", 876, 7, 46 ],
-    [ "Czechia", 833, 0, 4 ],
-    [ "Israel", 705, 0, 15 ],
-    [ "Brazil", 654, 7, 2 ],
-    [ "Ireland", 557, 3, 5 ],
-    [ "Pakistan", 500, 3, 13 ],
-    [ "Greece", 495, 9, 19 ],
-    [ "Luxembourg", 484, 5, 6 ],
-    [ "Qatar", 460, 0, 10 ],
-    [ "Finland", 450, 0, 10],
-    [ "Chile", 434, 0, 6 ],
-    [ "Poland", 411, 5, 13 ],
-    [ "Iceland", 409, 0, 5 ],
-    [ "Singapore", 385, 0, 131 ],
-    [ "Indonesia", 369, 32, 17 ]
-]
-
 
 
 seznam = [1,2,3,4,5]
