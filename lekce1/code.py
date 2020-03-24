@@ -1,3 +1,17 @@
+nazvy = [
+  'Někdo to rád horké, extended edition', 
+  'Adéla ještě nevečeřela',
+  'Kulový blesk'
+]
+delky = [136, 105, 82]
+
+
+# z
+[[str(delka//60) + ":" + str(delka%60)] for delka in delky]
+
+# na
+[str(delka//60) + ":" + str(delka%60) for delka in delky]
+
 
 #############################
 
@@ -160,9 +174,46 @@ volici
 #[True, False, True, True, False, False, True, False, True, False, False, False, True, True]
 
 
-
-
 ###########################
+# ukol 6 v povinnem ukolu
+coronavirus = [
+    [ "China", 80967, 3248, 71150 ],
+    [ "Italy", 47021, 4032, 5129 ],
+    [ "Spain", 20412, 1032, 1588 ],
+    [ "Iran", 19644, 1433, 6745 ],
+    [ "Germany", 18794, 53, 180 ],
+    [ "USA", 16489, 223, 125 ],
+    [ "France", 10995, 372, 1295 ],
+    [ "South Korea", 8652, 94, 2233 ],
+    [ "UK", 3269, 184, 65 ],
+    [ "Netherlands", 2994, 106, 2 ],
+    [ "Austria", 2491, 6, 9 ],
+    [ "Belgium", 2257, 37, 204 ],
+    [ "Norway", 1912, 7, 1 ],
+    [ "Sweden", 1639, 16, 16 ],
+    [ "Denmark", 1255, 9, 1 ],
+    [ "Malaysia", 1030, 3, 87 ],
+    [ "Portugal", 1020, 6, 5 ],
+    [ "Japan", 963, 33, 215 ],
+    [ "Canada", 924, 12, 11 ],
+    [ "Australia", 876, 7, 46 ],
+    [ "Czechia", 833, 0, 4 ],
+    [ "Israel", 705, 0, 15 ],
+    [ "Brazil", 654, 7, 2 ],
+    [ "Ireland", 557, 3, 5 ],
+    [ "Pakistan", 500, 3, 13 ],
+    [ "Greece", 495, 9, 19 ],
+    [ "Luxembourg", 484, 5, 6 ],
+    [ "Qatar", 460, 0, 10 ],
+    [ "Finland", 450, 0, 10],
+    [ "Chile", 434, 0, 6 ],
+    [ "Poland", 411, 5, 13 ],
+    [ "Iceland", 409, 0, 5 ],
+    [ "Singapore", 385, 0, 131 ],
+    [ "Indonesia", 369, 32, 17 ]
+]
+
+
 
 seznam = [1,2,3,4,5]
 [x for x in seznam] # [1,2,3,4,5]
@@ -170,6 +221,7 @@ seznam = [1,2,3,4,5]
 [[x,x+1] for x in seznam] # [[1,2],[2,3],[3,4],[4,5],[5,6]]
 
 
+###########################
 
 #############################
 
