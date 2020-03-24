@@ -15,6 +15,8 @@ delky = [136, 105, 82]
 ###########################
 # ukol 6
 
+#seznam vestavenych funkci z dokumentace Pythonu https://docs.python.org/3/library/functions.html
+# https://thehelloworldprogram.com/python/python-string-methods/
 jmena = ['Roman', 'Jan', 'Miroslav', 'Petr', 'Gabriel']
 pocty_pismen = [len(x) for x in jmena]
 pismena_velkym = [x.upper() for x in jmena]
@@ -71,6 +73,11 @@ sum( [radek[4] for radek in hlasy])
 # si je nejak vygenerovat
 [i for i in [0,1,2,3,4]]
 
+#to je pracne, muzeme pouzit funkci range()
+
+[i for i in range(4)]
+[i for i in range(0,4)]
+
 kandidati = [sum([radek[i] for radek in hlasy]) for i in [0,1,2,3,4]]
 #[1296501, 766454, 909361, 996101, 791656]
 
@@ -84,7 +91,10 @@ kandidati = [sum([radek[i] for radek in hlasy]) for i in [0,1,2,3,4]]
 #>>> igor, radim, ondrej, vladan, augustin
 #(1296501, 791656, 996101, 909361, 766454)
 kandidati
+
+
 max(kandidati)
+#1296501
 
 # pripadne
 kandidati.index(max(kandidati))
@@ -99,17 +109,20 @@ J_k= sum(hlasy[1])
 J_m_k= sum(hlasy[2])
 K_k = sum(hlasy[3]) # atd.
 
-kraje = [sum(hlasy[i]) for i in range(len(hlasy))]
-kraje.index(max(kraje))
+# mozno takhle nebo kraje = [sum(hlasy[i]) for i in range(len(hlasy))]
+
+kraje = [sum(kraje) for kraje in hlasy]
+maximum = kraje.index(max(kraje))
+minimum = kraje.index(min(kraje))
 
 #############################
 
 #12.d) Vytvořte tabulku, která ukazuje který kandidát vyhrál v kterém kraji.
 # pro kazdy radek
-[kandidat for kandidat in hlasy]
+[radek for radek in hlasy]
 
 #najdu maximum ze radku
-[max(kandidat) for kandidat in hlasy]
+[max(radek) for radek in hlasy]
 
 #[242854, 91062, 216499, 64737, 85730, 118755, 81181, 112578, 171064, 101680, 40228, 241122, 200997, 177272]
 
