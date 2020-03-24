@@ -17,6 +17,7 @@ delky = [136, 105, 82]
 
 #seznam vestavenych funkci z dokumentace Pythonu https://docs.python.org/3/library/functions.html
 # https://thehelloworldprogram.com/python/python-string-methods/
+
 jmena = ['Roman', 'Jan', 'Miroslav', 'Petr', 'Gabriel']
 pocty_pismen = [len(x) for x in jmena]
 pismena_velkym = [x.upper() for x in jmena]
