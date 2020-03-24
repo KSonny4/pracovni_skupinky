@@ -12,6 +12,16 @@ delky = [136, 105, 82]
 # na
 [str(delka//60) + ":" + str(delka%60) for delka in delky]
 
+###########################
+# ukol 6
+
+jmena = ['Roman', 'Jan', 'Miroslav', 'Petr', 'Gabriel']
+pocty_pismen = [len(x) for x in jmena]
+pismena_velkym = [x.upper() for x in jmena]
+zenska_jmena = [x + 'a' for x in jmena]
+pismena_velkym = [x.lower() + '@email.cz' for x in jmena]
+
+
 
 #############################
 
@@ -220,8 +230,6 @@ seznam = [1,2,3,4,5]
 [[x] for x in seznam] # [[1],[2],[3],[4],[5]]
 [[x,x+1] for x in seznam] # [[1,2],[2,3],[3,4],[4,5],[5,6]]
 
-
-###########################
 
 #############################
 
