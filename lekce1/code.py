@@ -172,12 +172,10 @@ list1 = ["eat","sleep","repeat"]
 # tohle, scita to i do vic jak 1, zaokrouhlovaci chyby, python zaokrouhluje divne :D
 [[ round(kandidat / sum(hlasy[cislo_kraje]) * 100, 2) for kandidat in kraj] for cislo_kraje, kraj in enumerate(hlasy)]
 
-# nebo tohle?
-[[ round(kandidat / pocet_volicu[cislo_kraje] * 100, 2) for kandidat in kraj] for cislo_kraje, kraj in enumerate(hlasy)]
-
 
 
 #12.f) Vytvořte seznam pravdivostních hodnot, který bude říkat ve kterých krajích překročila voleb
+# split() je stejne jako split(" ")
 kraje2 = [[x[0] , int (''.join(x[1].split()))] for x in kraje]
 kraje2 = [[x[0] , int(x[1].replace(" ", "")) ] for x in kraje]
 kraje2
