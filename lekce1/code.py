@@ -1,4 +1,4 @@
-"úkol 10 - delky = [136, 105, 82]
+#úkol 10 - delky = [136, 105, 82]
 delky = [136, 105, 82]
 trvani = [str([x // 60, x % 60]) for x in delky]
 trvani = [str(x // 60) + ":" + str(x % 60) for x in delky]
