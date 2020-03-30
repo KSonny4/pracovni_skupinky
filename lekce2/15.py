@@ -8,7 +8,7 @@ print(answer)
 
 
 word = sys.argv[1]
-upper_indices = [i for i in range(len(word)) if word[i].isupper()] + [len(word)]
+upper_indices = [0] + [i for i in range(len(word)) if word[i].isupper()] + [len(word)]
 print(upper_indices)
 snake = "_".join([word[upper_indices[i]:upper_indices[i + 1]].lower() for i in range(len(upper_indices) - 1)])
 print(snake)
