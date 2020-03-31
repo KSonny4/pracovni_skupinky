@@ -4,7 +4,7 @@ import sys
 # Predpoklada male pismeno na zacatku -- sys.argv[1] == "velbloudHoniHada".
 camel = sys.argv[1]
 upper_indices = [0] + [i for i in range(len(camel)) if camel[i].isupper()] + [len(camel)]
-snake = "_".join([camel[upper_indices[i]:upper_indices[i + 1]].lower() for i in range(len(upper_indices) - 1)])
+snake = "_".join([camel[upper_indices[i]:upper_indices[i + 1]]for i in range(len(upper_indices) - 1)]).lower() 
 print(snake)
 
 
@@ -18,6 +18,16 @@ print(answer)
 word = sys.argv[1]
 upper_indices = [0] + [i for i in range(len(word)) if word[i].isupper()] + [len(word)]
 print(upper_indices)
-snake = "_".join([word[upper_indices[i]:upper_indices[i + 1]].lower() for i in range(len(upper_indices) - 1)])
+snake = "_".join([word[upper_indices[i]:upper_indices[i + 1]].lower() for i in range(len(upper_indices) - 1)]).lower()
 print(snake)
 
+
+s = 'velbloudHoniHada'
+print([c for c in s])
+result = "".join(["_" +c.lower() if c.isupper() else c for c in s])
+print(result)
+
+s = 'velbloudHoniHada'
+print([c for c in s])
+result = "".join([[c,"_" +c.lower()][c.isupper()] for c in s])
+print(result)
