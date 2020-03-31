@@ -1,9 +1,8 @@
-
-
 # odkaz na dokumentaci na list comprehensions - chroustani seznamu
 # https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
 #úkol 10 - delky = [136, 105, 82]
+
 delky = [136, 105, 82]
 trvani = [str([x // 60, x % 60]) for x in delky]
 trvani = [str(x // 60) + ":" + str(x % 60) for x in delky]
