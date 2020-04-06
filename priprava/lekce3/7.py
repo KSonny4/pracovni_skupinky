@@ -3,6 +3,8 @@ from pprint import pprint
 
 pasazeri = open("pasazeri.txt")
 passengers = [p for p in pasazeri]
+pasazeri.close()
+
 pprint(passengers)
 
 passengers = [p.strip() for p in passengers]
