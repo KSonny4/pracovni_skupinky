@@ -14,8 +14,9 @@ pprint(passengers)
 dny = [[p.split(",") for p in passengers[x]] for x in range(len(passengers))]
 pprint(dny)
 
-den1_tam = [int(dny[0][x][0]) for x in range(len(dny[0]))]
-den1_zpet = sum([int(dny[0][x][1]) for x in range(len(dny[0]))])
+dny0 = dny[0]
+den1_tam = [int(dny0[x][0]) for x in range(len(dny0))]
+den1_zpet = sum([int(dny[0][x][1]) for x in range(len(dny0))])
 pprint(den1_tam)
 pprint(den1_zpet)
 
