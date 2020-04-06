@@ -18,10 +18,7 @@ pprint(f"zpet_prvni_den {zpet_prvni_den}")
 
 #pprint([den for den in pasazeri])
 
-tam = sum ( [ sum ( [int(hodnota.split(",")[0]) for hodnota in den ] ) for den in pasazeri ] )
-pprint(tam)
-
-# tam = sum ([ sum([ int(hodnota.split(",")[0]) for hodnota in den ]) for den in pasazeri])
-# zpet = sum ([ sum([ int(hodnota.split(",")[1]) for hodnota in den ]) for den in pasazeri])
-# pprint(f"tam {tam}") 
-# pprint(f"zpet {zpet}") 
+tam = sum ([ sum([ int(hodnota.split(",")[0]) for hodnota in den ]) for den in pasazeri])
+zpet = sum ([ sum([ int(hodnota.split(",")[1]) for hodnota in den ]) for den in pasazeri])
+pprint(f"tam {tam}") 
+pprint(f"zpet {zpet}") 
