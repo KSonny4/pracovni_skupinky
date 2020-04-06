@@ -19,8 +19,17 @@ pprint(dny)
 dny0 = dny[0]
 den1_tam = [int(dny0[x][0]) for x in range(len(dny0))]
 den1_zpet = sum([int(dny[0][x][1]) for x in range(len(dny0))])
+
 pprint(den1_tam)
 pprint(den1_zpet)
+
+tam_prvni_den = sum([ int(hodnota.split(",")[0]) for hodnota in dny0 ]) 
+zpet_prvni_den = sum([ int(hodnota.split(",")[1]) for hodnota in dny0 ])
+
+pprint(tam_prvni_den)
+pprint(zpet_prvni_den)
+
+
 
 # # 7.b) Nechť váš program vypisuje součty pasažérů ze celý týden, tedy kolik lidí za celý týden jelo směrem tam a kolik směrem zpět.
 pasazeri = open("pasazeri.txt")
