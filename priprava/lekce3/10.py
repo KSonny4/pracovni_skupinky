@@ -3,7 +3,8 @@
 
 import random
 karta = open('karty.txt', 'r', encoding='utf-8')
-
+karticky = [card for card in karta]
+karta.close()
 #10.b) Existuje vícero možných postupů, které vedou ke stejnému výsledku. Zde už můžete trochu zagooglit. Ve většině postupů se vám bude hodit příkaz, který umí odstranit prvek seznamu na zadaném indexu:.
 #x = [1, 2, 3]
 #>>> del x[0]
@@ -11,7 +12,7 @@ karta = open('karty.txt', 'r', encoding='utf-8')
 #[2, 3]
 #Také se vám může hodit funkce shuffle() z modulu random, která umí náhodně zamíchat seznam.
 
-import itertools, random
+import random
 
 card_color = ['kříže', 'srdce', 'piky', 'káry']
 card_number = ['2','3','4','5','6','7','8','9','J','Q','K','A']
