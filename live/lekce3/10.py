@@ -5,9 +5,9 @@ deck = [card for card in soubor]
 soubor.close()
 
 
-# print("zaprasene " + str(deck))
-# print("zaprasene {}".format(deck))
-pprint(f"zaprasene: {deck}")
+# print("zaprášené " + str(deck))
+# print("zaprášené {}".format(deck))
+pprint(f"zaprášené: {deck}")
 
 deck_strip = [card.strip() for card in deck]
 pprint(f"odprasene: {deck_strip}")
@@ -18,6 +18,10 @@ random.shuffle(deck_strip)
 
 pprint(f"zamichano: {deck_strip}")
 
+# zamichal jsem prvky, tedy napriklad ze seznamu
+# [1,2,3,4] se vytvori seznam [4,2,1,3]
+# staci mi tak vzit si libovolne 4 prvky z deck_strip
+# a tak si vezmu prvni 4 prvky
 vybrane_karty = deck_strip[:4]
 
 pprint(f"vybrane karty: {vybrane_karty}")
