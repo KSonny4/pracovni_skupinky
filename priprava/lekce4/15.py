@@ -1,7 +1,7 @@
 #https://stackoverflow.com/questions/11964450/python-order-a-list-of-numbers-without-built-in-sort-min-max-function
 #https://en.wikipedia.org/wiki/Bogosort
 #https://github.com/gustavo-depaula/stalin-sort
-
+#https://www.algoritmy.net/article/3/Bubble-sort
 
 import sys
 
