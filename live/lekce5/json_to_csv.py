@@ -20,6 +20,6 @@ with open(vstup,'r',encoding='utf-8') as _file, open(vystup, mode='w') as csv_fi
     
     for row in data:
         print(row)
-        writer.writerow(row)  
+        writer.writerow(row)
    
    
