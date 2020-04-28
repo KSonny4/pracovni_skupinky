@@ -1,0 +1,3 @@
+odkazy ke cviceni
+
+Jeste posilam https://www.leetcode.com a https://www.hackerrank.com/ .. nektere ulohy pocitaji se znalosti nejake teorie.. takze ne vse vam pujde, ale treba tahle uloha je hezka  https://www.hackerrank.com/challenges/fizzbuzz/problem .. tady je pojednani o tom proc je hezka https://blog.usejournal.com/about-coding-the-fizzbuzz-interview-question-9bcd08d9dfe5?gi=a03b6a62b7fe
